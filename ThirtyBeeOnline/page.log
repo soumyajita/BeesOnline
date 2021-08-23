@@ -1,0 +1,7 @@
+2021-08-23 20:39:35,259  INFO [main] HomePage:80 - navigate to CreateAccountPage
+2021-08-23 20:39:35,322  INFO [main] TestBase:36 - chrome
+2021-08-23 20:39:35,323  INFO [main] TestBase:39 - initializing browser
+2021-08-23 20:39:35,324  WARN [main] TestBase:40 - chromedriver file should be at specific location
+2021-08-23 20:39:35,325  INFO [main] TestBase:43 - chrome browser opened
+2021-08-23 20:39:36,794  INFO [main] TestBase:59 - ThrityBeesEcommerce application is launched
+2021-08-23 20:39:38,891  INFO [main] TestBase:62 - maximizing browser window

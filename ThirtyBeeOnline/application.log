@@ -1,0 +1,6 @@
+2021-08-23 20:39:23,052  INFO [main] TestBase:36 - chrome
+2021-08-23 20:39:23,068  INFO [main] TestBase:39 - initializing browser
+2021-08-23 20:39:23,069  WARN [main] TestBase:40 - chromedriver file should be at specific location
+2021-08-23 20:39:23,069  INFO [main] TestBase:43 - chrome browser opened
+2021-08-23 20:39:25,500  INFO [main] TestBase:59 - ThrityBeesEcommerce application is launched
+2021-08-23 20:39:27,895  INFO [main] TestBase:62 - maximizing browser window

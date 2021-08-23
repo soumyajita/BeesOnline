@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27878" started-at="2021-08-23T20:36:30 IST" finished-at="2021-08-23T20:36:58 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27878" started-at="2021-08-23T20:36:30 IST" finished-at="2021-08-23T20:36:58 IST">
+      <class name="com.thirtybees.test.HomeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="setUp" is-config="true" duration-ms="5034" started-at="2021-08-23T20:36:30 IST" finished-at="2021-08-23T20:36:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchByValidProductGetTitle()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="searchByValidProductGetTitle" duration-ms="2911" started-at="2021-08-23T20:36:35 IST" finished-at="2021-08-23T20:36:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByValidProductGetTitle -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="setUp" is-config="true" duration-ms="3471" started-at="2021-08-23T20:36:38 IST" finished-at="2021-08-23T20:36:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchInValidProduct()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="searchInValidProduct" duration-ms="2500" started-at="2021-08-23T20:36:41 IST" finished-at="2021-08-23T20:36:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInValidProduct -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="setUp" is-config="true" duration-ms="3607" started-at="2021-08-23T20:36:44 IST" finished-at="2021-08-23T20:36:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateEmptyCartList()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="validateEmptyCartList" duration-ms="2371" started-at="2021-08-23T20:36:47 IST" finished-at="2021-08-23T20:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyCartList -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="setUp" is-config="true" duration-ms="4084" started-at="2021-08-23T20:36:50 IST" finished-at="2021-08-23T20:36:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLogo()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="verifyLogo" duration-ms="7" started-at="2021-08-23T20:36:54 IST" finished-at="2021-08-23T20:36:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="setUp" is-config="true" duration-ms="3805" started-at="2021-08-23T20:36:54 IST" finished-at="2021-08-23T20:36:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.thirtybees.test.HomeTest@5ed828d]" name="verifyTitle" duration-ms="34" started-at="2021-08-23T20:36:58 IST" finished-at="2021-08-23T20:36:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+      </class> <!-- com.thirtybees.test.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
