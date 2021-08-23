@@ -21,7 +21,7 @@ public class CoffeeAndTeaPage extends CoffeeAndTeaPageObjectRepository {
 		PageFactory.initElements(driver, this);
 	}
 
-	public boolean productSortDropDown() throws Exception {
+	public boolean productSortDropDown()  {
 		ArrayList<String> actualProductData = new ArrayList<String>();
 		Select sel = new Select(select);
 		pageLogs().info("Getting Select product");
