@@ -24,6 +24,7 @@ public class CoffeeAndTeaPage extends CoffeeAndTeaPageObjectRepository {
 	public boolean productSortDropDown() throws Exception {
 		ArrayList<String> actualProductData = new ArrayList<String>();
 		Select sel = new Select(select);
+		pageLogs().info("Getting Select product");
 		List<WebElement> list = sel.getOptions();
 		for (WebElement element : list) {
 			String data = element.getText();
