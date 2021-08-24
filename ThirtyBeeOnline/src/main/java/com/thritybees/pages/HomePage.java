@@ -1,9 +1,10 @@
 package com.thritybees.pages;
 
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
 
 import com.thritybees.objectRepository.HomePageObjectREpository;
 import com.thritybees.utility.ActionUtility;
@@ -66,10 +67,19 @@ public class HomePage extends HomePageObjectREpository {
     
   
     
-   /* public String validateCartPageTitle(){
-        return driver.getTitle();
-    }*/
-
+	public String verifytitle() {
+		String Expected = "BEE";
+		return Expected;
+	}
+	
+	public String verifyProduct() {
+		JavascriptExecutor js =  (JavascriptExecutor)driver;
+		WebElement flag = tinCupPdt;
+		js.executeScript("arguments[0].scrollIntoView();", flag);
+		return null;
+		
+	}
+	
 	public CoffeeAndTeaPage navigateToCoffeeAndTeaPage() {
 		actionUtility.click(coffeeAndTea);
 		pageLogs().info("navigate to CoffeeAndTeaPage");
@@ -80,7 +90,13 @@ public class HomePage extends HomePageObjectREpository {
 		pageLogs().info("navigate to CreateAccountPage");
 		return new CreateAccountPage(driver);
 	}
+
 	
+	public AuthenticationPage navigateToAuthenticationPage (){
+		actionUtility.click(signIn);
+		pageLogs().info("navigate to Registration Page");
+		return new AuthenticationPage(driver);
+	}
 
 
 

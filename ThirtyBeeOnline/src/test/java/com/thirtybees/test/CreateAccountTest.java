@@ -25,7 +25,7 @@ public class CreateAccountTest extends TestBase {
 		try {
 			Assert.assertEquals(account.validateRegistation(), "Your account has been created.");
 		} catch (Exception e) {
-			testLogs().info("");
+			testLogs().info("--verifyRegistation completed--");
 			e.printStackTrace();
 		}
 	}

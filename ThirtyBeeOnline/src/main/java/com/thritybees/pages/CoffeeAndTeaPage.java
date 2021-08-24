@@ -1,7 +1,6 @@
 package com.thritybees.pages;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.thritybees.objectRepository.CoffeeAndTeaPageObjectRepository;
 import com.thritybees.utility.ActionUtility;
 import com.thritybees.utility.ExcelUtility;
-import com.thritybees.utility.SelectUtility;
+
 
 public class CoffeeAndTeaPage extends CoffeeAndTeaPageObjectRepository {
 	WebDriver driver = null;
@@ -39,6 +38,7 @@ public class CoffeeAndTeaPage extends CoffeeAndTeaPageObjectRepository {
 		else
 			return false;
 	}
-
+	public void sortProductPricesInAscendingOrder(){
+	}
 	
 }

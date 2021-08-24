@@ -33,4 +33,10 @@ public class HomePageObjectREpository extends LogsUtility{
 	
 	@FindBy(xpath="//h3[@class='subcategory-title text-center']//following::a[text()='Tea']")
 	public WebElement Tea;
+	
+	@FindBy(xpath="//a[@class='login']")
+	public WebElement signinBtn;
+	
+	@FindBy(xpath="//*[@id='homefeatured']/li[4]/article/div/div[2]/h3/a")
+	public WebElement tinCupPdt;
 }

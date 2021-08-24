@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.thirtybees.test.CoffeeAndTeaTest">
+      <class name="com.thirtybees.test.AuthenticationTest">
         <methods>
+          <include name="verifyWrongEmailEnter"/>
           <include name="setUp"/>
-          <include name="priceSortDropDownList"/>
         </methods>
-      </class> <!-- com.thirtybees.test.CoffeeAndTeaTest -->
+      </class> <!-- com.thirtybees.test.AuthenticationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
