@@ -21,7 +21,7 @@ public class ListenerTest implements ITestListener{
 	}
 
 	public void onTestFailure(ITestResult result) {
-		TestBase.takeScreenshot();
+		
 		//TestBase.takeScreenshot();
 		TestBase.log.info("Test case is failed with name:" +result.getName());
 		

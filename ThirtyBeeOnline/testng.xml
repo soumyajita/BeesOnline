@@ -5,6 +5,7 @@
     <classes>
       <class name="com.thirtybees.test.HomeTest"/>
        <class name="com.thirtybees.test.CreateAccountTest"/>
+        <class name="com.thirtybees.test.AuthenticationTest"/>
         <class name="com.thirtybees.test.CoffeeAndTeaTest"/>
      
     </classes>
