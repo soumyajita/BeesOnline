@@ -15,9 +15,7 @@
 					<useSystemClassLoader>false</useSystemClassLoader>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.offline.xml</suiteXmlFile>
-
-						<suiteXmlFile>testnggroupTest1.xml</suiteXmlFile>
+					<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

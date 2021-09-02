@@ -12,7 +12,7 @@ import org.testng.ITestResult;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.BeforeTest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -42,9 +42,10 @@ public class ExtentReportV4 extends TestBase {
 		htmlReporter.config().setTheme(Theme.DARK);// Default Theme of Report
 
 		// General information releated to application
-		extent.setSystemInfo("Application Name", "Jbk_Automation");
+		extent.setSystemInfo("Application Name", "ThirtyBee_Automation");
 		extent.setSystemInfo("Envirnoment", "Automation testing");
 		extent.setSystemInfo("User Name", "Soumya");
+		
 	}
 
 	@AfterTest
@@ -52,7 +53,7 @@ public class ExtentReportV4 extends TestBase {
 		extent.flush();
 	}
 
-	@BeforeMethod
+	/*@BeforeMethod
 	public void setup() {
 		try {
 			driver = initialization("config.properties");
@@ -61,7 +62,7 @@ public class ExtentReportV4 extends TestBase {
 		}
 		driver.manage().window().maximize();
 
-	}
+	}*/
 
 	public static void passTest(String testName) {
 		test = extent.createTest(testName);
