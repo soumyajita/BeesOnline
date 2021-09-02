@@ -3,12 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.thirtybees.test.AuthenticationTest">
+      <class name="com.thirtybees.test.CreateAccountTest">
         <methods>
-          <include name="verifyWrongEmailEnter"/>
           <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="verifyRegistration"/>
+          <include name="tearDown"/>
+          <include name="extentReportSetup"/>
+          <include name="getResult"/>
+          <include name="validateInvalidateLoginCredential"/>
+          <include name="validateValidLoginCredential"/>
+          <include name="validateBlankLoginCredential"/>
+          <include name="verifyInValidRegistration"/>
         </methods>
-      </class> <!-- com.thirtybees.test.AuthenticationTest -->
+      </class> <!-- com.thirtybees.test.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

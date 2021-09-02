@@ -5,15 +5,25 @@
     <classes>
       <class name="com.thirtybees.test.AuthenticationTest">
         <methods>
-          <include name="validateerrorMsgWithoutcridential"/>
           <include name="verifyBlankEmailErrMsg"/>
-          <include name="validateMsg"/>
-          <include name="verifyWrongPassEnter"/>
+          <include name="endReport"/>
+          <include name="extentReportSetup"/>
           <include name="validateAfterLoginMsg"/>
+          <include name="getResult"/>
+          <include name="verifyWrongEmailEnter"/>
           <include name="validateAddingNewAddres"/>
-          <include name="Openbrowser"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.thirtybees.test.AuthenticationTest -->
+      <class name="com.thirtybees.test.CreateAccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="extentReportSetup"/>
+          <include name="getResult"/>
+          <include name="verifyInValidRegistration"/>
+        </methods>
+      </class> <!-- com.thirtybees.test.CreateAccountTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -48,4 +48,17 @@ public class CreateAccountObjectRepository extends LogsUtility{
 	@FindBy(xpath="//div[@class='alert alert-danger']")
 	public WebElement invalidRegisteration;
 	
+	
+
+
+
+	@FindBy(id = "SubmitLogin")
+	public WebElement signInBtn;
+
+	@FindBy(xpath = "//a[text()='Forgot your password?']")
+	public WebElement forgotPwd;
+
+
+
+	
 }

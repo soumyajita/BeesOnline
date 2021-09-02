@@ -1,39 +1,52 @@
 package com.thirtybees.test;
 
-
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import com.thritybees.base.TestBase;
+
+import com.thritybees.extentreports.ExtentReportV4;
 import com.thritybees.pages.CreateAccountPage;
 import com.thritybees.pages.HomePage;
 
-
-public class CreateAccountTest extends TestBase {
+public class CreateAccountTest extends ExtentReportV4 {
+	WebDriver driver = null;
 	HomePage hp = null;
 	CreateAccountPage account = null;
 
 	@BeforeSuite
-	public void setUp() throws Exception {
-		driver = initialization("config.properties");
-		hp = new HomePage(driver);
-		account = hp.navigateToCreateAccountPage();
+	public void setUp() {
+		try {
+			driver = initialization("config.properties");
+			hp = new HomePage(driver);
+			account = hp.navigateToCreateAccountPage();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@Test
-	public void verifyRegistation() {
+	public void verifyRegistration() {
 		try {
+			passTest("--Registration Complete--");
 			Assert.assertEquals(account.validateRegistation(), "Your account has been created.");
+			testLogs().info("--Registration complete--");
 		} catch (Exception e) {
-			testLogs().info("--verifyRegistation completed--");
+
 			e.printStackTrace();
 		}
 	}
 
 	@Test
 	public void verifyInValidRegistration() {
-		testLogs().info("");
+		passTest("--Registration is not Completed--");
+		testLogs().info("--Registration is not completed--");
 		Assert.assertTrue(account.inValidateRegistation());
 	}
+
+
+
 
 }
